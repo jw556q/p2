@@ -1,4 +1,6 @@
 p2.1
+
+
 import pandas
 import pandasql
 
@@ -40,9 +42,9 @@ def num_rainy_days(filename):
     rainy_days = pandasql.sqldf(q.lower(), locals())
     return rainy_days
     
-    p2.2
+p2.2
     
-    import pandas
+import pandas
 import pandasql
 
 
@@ -126,7 +128,7 @@ def avg_weekend_temperature(filename):
     mean_temp_weekends = pandasql.sqldf(q.lower(), locals())
     return mean_temp_weekends
     
-    p2.4
+p2.4
     
     import pandas
 import pandasql
@@ -165,7 +167,7 @@ def avg_min_temperature(filename):
     avg_min_temp_rainy = pandasql.sqldf(q.lower(), locals())
     return avg_min_temp_rainy
     
-    p2.5
+p2.5
     
     import csv
 
@@ -331,7 +333,7 @@ def get_hourly_entries(df):
     df = df.fillna(1)
     return df
     
-    p2.9
+p2.9
     
     import pandas
 
@@ -392,7 +394,7 @@ def time_to_hour(time):
     hour = int(time.split(':')[0])
     return hour
     
-    p2.11
+p2.11
     
     import datetime
 import time as temp_time
