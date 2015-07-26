@@ -1,4 +1,4 @@
-p2.1
+PS 2.1
 
 
 import pandas
@@ -41,8 +41,7 @@ def num_rainy_days(filename):
     #Execute your SQL command against the pandas frame
     rainy_days = pandasql.sqldf(q.lower(), locals())
     return rainy_days
-    
-p2.2
+PS 2.2
     
 import pandas
 import pandasql
@@ -83,7 +82,7 @@ def max_temp_aggregate_by_fog(filename):
     foggy_days = pandasql.sqldf(q.lower(), locals())
     return foggy_days
 
-p2.3
+PS 2.3
 
 import pandas
 import pandasql
@@ -128,7 +127,7 @@ def avg_weekend_temperature(filename):
     mean_temp_weekends = pandasql.sqldf(q.lower(), locals())
     return mean_temp_weekends
     
-p2.4
+PS 2.4
     
     import pandas
 import pandasql
@@ -167,7 +166,7 @@ def avg_min_temperature(filename):
     avg_min_temp_rainy = pandasql.sqldf(q.lower(), locals())
     return avg_min_temp_rainy
     
-p2.5
+PS 2.5
     
     import csv
 
@@ -225,8 +224,7 @@ def fix_turnstile_data(filenames):
 
         f_out.close() 
 
-
-p2.6
+PS 2.6
 
 import re
 def create_master_turnstile_file(filenames, output_file):
@@ -265,7 +263,7 @@ def create_master_turnstile_file(filenames, output_file):
        #master_file.close()
 
 
-p2.7
+PS 2.7
 
 import pandas
 
@@ -291,11 +289,10 @@ def filter_by_regular(filename):
     turnstile_data = turnstile_data[turnstile_data.DESCn.isin(["REGULAR"])]
     return turnstile_data
     
-    p2.8
-    
+PS 2.8
     import pandas
 
-def get_hourly_entries(df):
+    def get_hourly_entries(df):
     '''
     The data in the MTA Subway Turnstile data reports on the cumulative
     number of entries and exits per row.  Assume that you have a dataframe
@@ -333,7 +330,7 @@ def get_hourly_entries(df):
     df = df.fillna(1)
     return df
     
-p2.9
+PS 2.9
     
     import pandas
 
@@ -373,7 +370,7 @@ def get_hourly_exits(df):
     return df
 
 
-p2.10
+PS 2.10
 
 import pandas
 
@@ -394,7 +391,7 @@ def time_to_hour(time):
     hour = int(time.split(':')[0])
     return hour
     
-p2.11
+ PS 2.11
     
     import datetime
 import time as temp_time
